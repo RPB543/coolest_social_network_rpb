@@ -53,11 +53,35 @@ const userController = {
         User.findOneAndDelete({ _id: params.id })
         .then(dbUserData => {
             if(!dbUserData) {
-                res.status(404).json({ message: 'No user found wtih this id!' });
+                res.status(404).json({ message: 'No user found with this id!' });
                 return;
             }
+            return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } })
             res.json(dbUserData);
         })
+        .catch(err => res.status(400).json(err));
+    },
+
+    // add friend
+    addFriend({ params }, res) {
+        User.findOneAndUpdate(
+            { _id: params.userId }, 
+            { $addToSet: { friends: params.friendId } },
+            { new: true }
+        )
+        .then(dbUserData => res.json(dbUserData)
+        )
+        .catch(err => res.status(400).json(err));
+    },
+
+    // delete friend
+    deleteFriend({ params }, res) {
+        User.findOneAndUpdate(
+            { _id: params.userId },
+            { $pull: { friends: params.friendId } },
+            { new: true }
+        )
+        .then(dbUserData => res.json(dbUserData))
         .catch(err => res.status(400).json(err));
     }
 }

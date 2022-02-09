@@ -1,7 +1,8 @@
 const { Schema, model } = require('mongoose');
 const moment = require('moment');
 
-const UserSchema = new Schema({
+const UserSchema = new Schema(
+    {
     username: {
         type: String,
         unique: true,
@@ -12,7 +13,7 @@ const UserSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        match: [/.+@.+\..+/]
+        match: [/.+@.+\..+/, 'Must input a valid email']
     },
     thoughts: [
         {
