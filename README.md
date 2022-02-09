@@ -1,1 +1,1 @@
-# coolest_social_network_rpb
+# Challenge 18 - NoSQL Challenge: Social Network API
