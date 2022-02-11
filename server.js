@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(require('./routes'));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social_network_api_rpb', {
-  useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
