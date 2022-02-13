@@ -9,7 +9,7 @@ const thoughtController = {
                 path: 'reactions',
                 select: '-__v'
             })
-            .select('__v')
+            .select('-__v')
             .sort(({ _id: -1 }))
             .then(dbThoughtData => res.json(dbThoughtData))
             .catch(err => {
@@ -25,7 +25,7 @@ const thoughtController = {
                 path: 'reactions',
                 select: '-__v'
             })
-            .select('__v')
+            .select('-__v')
             .sort(({ _id: -1 }))
             .then(dbThoughtData => {
                 //if no thought found, send 404
@@ -51,8 +51,8 @@ const thoughtController = {
                     { new: true }
                 );
             })
-            .then(dbUserData => {
-                if (!dbUserData) {
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
                     res.status(404).json({ message: 'No user found with this id!' });
                     return;
                 }
