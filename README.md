@@ -6,7 +6,7 @@
 - [Project Criteria](#project-criteria)  
 - [Walkthrough Videos](#walkthrough-videos)  
 - [Instructions](#instructions)  
-- [Tests](#tests)  
+- [Links](#links)  
 
 ## Objective
 This application creates an API for a social network to allow users to share their thoughts, reactions and create a friend list.  It uses Express.js for routing, a MongoDB database, Mongoose ODM, and the moment package to format time stamps.
@@ -19,10 +19,10 @@ This application creates an API for a social network to allow users to share the
 - The API POST and DELETE routes are tested in Insomnia and are able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
 
 ## Walkthrough Videos
-- [User Routes]()
-- [Thought Routes]()  
-- [Friend Routes]()   
-- [Reaction Routes]()  
+- [User Routes](https://watch.screencastify.com/v/NXi7zz6tPehOFk6yTxk7)
+- [Thought Routes](https://watch.screencastify.com/v/fkfwqSEQE5Kz7FGQBB0O)  
+- [Friend Routes](https://watch.screencastify.com/v/QFv3eFCINE4NB0OGEWJo)   
+- [Reaction Routes](https://watch.screencastify.com/v/1eJkdMVOzFo1tHhCyoCo)  
 
 ## Instructions
 Follow the following instructions to replicate this repo.
@@ -38,8 +38,7 @@ Follow the following instructions to replicate this repo.
 ```
 4. Use Insomnia to test the routes.
 
-## Tests
+## Links
 
-Testing with Insomnia Core  
-
----
+👻 [Repo](https://github.com/RPB543/social-network-rpb)\
+☠️ [Github](https://github.com/RPB543)
