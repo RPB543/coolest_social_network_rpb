@@ -40,5 +40,5 @@ Follow the following instructions to replicate this repo.
 
 ## Links
 
-👻 [Repo](https://github.com/RPB543/social-network-rpb)\
+👻 [Repo](https://github.com/RPB543/social_network_api_rpb)\
 ☠️ [Github](https://github.com/RPB543)
