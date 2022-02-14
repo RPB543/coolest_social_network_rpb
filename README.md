@@ -19,10 +19,10 @@ This application creates an API for a social network to allow users to share the
 - The API POST and DELETE routes are tested in Insomnia and are able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
 
 ## Walkthrough Videos
-[User Routes]() 
-[Thought Routes]()  
-[Friend Routes]()   
-[Reaction Routes]()  
+- [User Routes]()
+- [Thought Routes]()  
+- [Friend Routes]()   
+- [Reaction Routes]()  
 
 ## Instructions
 Follow the following instructions to replicate this repo.
@@ -30,7 +30,7 @@ Follow the following instructions to replicate this repo.
 
 2. Install the necessary packages with the following command:
 ```
-    - npm install
+    $ npm install
 ```
 3. Start the server.
 ```
